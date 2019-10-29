@@ -39,10 +39,12 @@
 
 			firebase.database().ref('subscription-entries').push().set(emailObject)
 				.then(function(snapshot) {
-					success(); // some success method
+					//success(); // some success method
+					alert('성공');
 				}, function(error) {
 					console.log('error' + error);
-					error(); // some error method
+					//error(); // some error method
+					alert('실패');
 				});
 		}
 
